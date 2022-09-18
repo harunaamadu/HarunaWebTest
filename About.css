@@ -1,0 +1,175 @@
+.aboutAchieve {
+   margin-top: 3rem;
+}
+
+.containerAboutAchieve {
+   display: grid;
+   grid-template-columns: 40% 60%;
+   gap: 5rem;
+   align-items: center;
+}
+
+.achCards {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1.5rem;
+   padding-right: 5rem;
+}
+
+.achCard {
+   text-align: center;
+   padding: 1.6rem;
+   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+   position: relative;
+   border-radius: 5px;
+   z-index: 1;
+   background: inherit;
+   overflow: hidden;
+   transition: var(--transition);
+}
+
+.achCard::before {
+   content: "";
+   position: absolute;
+   background: inherit;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+   filter: blur(10px);
+   margin: -20px;
+}
+
+.achCard:hover {
+   background: var(--color-darkgray);
+   border: 1px solid var(--color-black);
+}
+
+.achIcon {
+   background: var(--color-primary);
+   padding: 0.6rem;
+   border-radius: 1rem;
+   display: inline-block;
+   margin-bottom: 2rem;
+   font-size: 2rem;
+   width: 4rem;
+}
+
+.achCard:nth-child(2) .achIcon {
+   background: var(--color-danger);
+}
+
+.achCard:nth-child(3) .achIcon {
+   background: var(--color-success);
+}
+
+.achCard h3 {
+   font-size: 2rem;
+   color: var(--color-gray);
+}
+   
+.achCard p {
+   margin-top: 1rem;
+   color: var(--color-darkgray);
+}
+
+.aboutAchieverRight > p {
+   margin: 1.6rem 0 2.5rem;
+   padding-right: 5rem;
+}
+
+.team {
+   background: var(--color-bg2);
+   box-shadow: inset 0 0 3rem var(--boxSh1);
+}
+
+.containerTeam {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 2rem;
+}
+
+.teamMember {
+   position: relative;
+   background: var(--color-primary);
+   padding: 2rem;
+   border-radius: 1rem;
+   overflow: hidden;
+   transition: var(--transition);
+}
+
+.teamMember:hover {
+   background: none;
+   box-shadow: inset -0.5rem 0.5rem 1rem var(--color-gray);
+}
+
+.teamMemberImage img {
+   filter: saturate(0);
+   height: 11rem;
+   width: 8rem;
+   transition: var(--transition);
+}
+   
+.teamMember:hover img {
+   filter: saturate(1);
+}
+
+.memberInfo * {
+   text-align: center;
+   margin-top: 1.4rem;
+   white-space: nowrap;
+}
+
+.memberInfo p {
+   color: var(--color-success);
+}
+
+.memberSocial {
+   position: absolute;
+   top: 11%;
+   right: -100%;
+   display: flex;
+   flex-direction: column;
+   border-radius: 1rem 0 0 1rem;
+   box-shadow: -0.2rem 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.4);
+   background: var(--color-bg2);
+   overflow: hidden;
+   transition: var(--transition);
+   transition-delay: 50ms;
+}
+
+.memberSocial a {
+   padding: 1rem;
+}
+
+.memberSocial a {
+   color: #3f729b;
+}
+   
+.memberSocial a:nth-child(2) {
+   color: #00acee;
+}
+
+.memberSocial a:nth-child(3) {
+   color: #0072b1;
+}
+
+.teamMember:hover .memberSocial {
+   right: 0;
+}
+
+
+/*
+
+inst = #3f729b
+twit = #00acee
+link = #0072b1
+
+
+
+*/
+
+
+

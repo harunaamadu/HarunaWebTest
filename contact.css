@@ -1,0 +1,116 @@
+.containerCon {
+   display: grid;
+   grid-template-columns: 40% 60%;
+   background: var(--color-bg1);
+   padding: 4rem;
+   gap: 4rem;
+   height: 30rem;
+   margin: 7rem auto;
+   border-radius: 1rem;
+   align-items: center;
+}
+
+/*ASIDE*/
+
+.contactAside {
+   background: var(--color-primary);
+   padding: 3rem;
+   border-radius: 1rem;
+   position: relative;
+   width: 17rem;
+}
+
+.contactAside h2 {
+   text-align: start;
+   margin-bottom: 1rem;
+   font-size: 2rem;
+}
+
+.contactAside p {
+   font-size: 0.9rem;
+   text-align: start;
+   margin-bottom: 2rem;
+}
+
+.asideImg {
+   width: 12rem;
+   margin-bottom: 2rem;
+}
+
+.contactDetail li {
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+   margin-bottom: 1rem;
+}
+
+.contIons {
+   display: flex;
+   gap: 0.8rem;
+   margin-top: 3rem;
+}
+
+.contIons a {
+   background: var(--color-white);
+   border-radius: 50%;
+   padding: 0.5rem;
+   font-size: 0.9rem;
+   width: 2rem;
+   height: 2rem;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   display: block;
+   transform: rotateZ(-1440deg);
+   transition: var(--transition);
+}
+
+.contIons a:hover {
+   background: transparent;
+   transform: rotateZ(0deg);
+}
+
+.contIons a i {
+   transform: translate(1px, -4px);
+   position: absolute;
+   color: var(--color-primary);
+   transition: var(--transition);
+}
+
+.contIons a:hover i {
+   color: var(--color-white);
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   gap: 1.2rem;
+   margin-right: 4rem;
+}
+
+form input[type="text"]{
+   width: 50%;
+}
+
+.FormName {
+   display: flex;
+   gap: 1.2rem;
+}
+
+input, textarea {
+   width: 100%;
+   padding: 1rem;
+   background: var(--color-bg);
+   border-radius: 1rem;
+   color: var(--color-darkgray);
+   font-weight: 400;
+}
+
+form .btn {
+   width: max-content;
+   margin-top: 1rem;
+   cursor: pointer;
+}
+
+
+

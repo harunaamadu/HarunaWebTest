@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<meta name="description" content="best educational website">
+			<meta name="keyword" content="online education, html, css, javascript">
+			
+			<!-- custom css -->
+			<link rel="stylesheet" href="css/style.css"></link>
+			<style>
+			   .courses {
+			      margin-top: 1rem;
+			   }
+			   .pagination {
+			      margin-top: 3rem;
+			      display: flex;
+			      flex-direction: row;
+			      gap: 0.5rem;
+			      position: relative;
+			      align-items: center;
+			      justify-content: center;
+			   }
+			   
+			   .next a, .prev a {
+			      width: 7rem;
+			      text-align: center;
+			      white-space: nowrap;
+			   }
+			</style>
+			<title>educ8r</title>
+			
+			<!-- iconscout cdn -->
+			<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+			
+			<!-- google font (raleway) -->
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+         
+         <!---- swiper js cdn---->
+         <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+		<nav>
+				<div class="container containerNav">
+						<a href="index.html "><h4><span>educ</span>8r</h4></a>
+						   <ul class="navMenu">
+	   						<li><a href="index.html">home</a></li>
+								<li><a href="about.html">about</a></li>
+								<li><a href="course.html">courses</a></li>
+								<li><a href="contact.html">contact</a></li>
+							</ul>
+								<button class="open-menu-btn"><i class="uil uil-bars"></i></button>
+								<button class="close-menu-btn"><i class="uil uil-times"></i></button>
+				</div>
+		</nav>
+	<! -------- nav end -------- >
+	
+	
+	<section class="courses">
+	   <div class="container containerCourse">
+	      <article class="course">
+	         <div class="courseVid">
+	            <video width="320" height="240" autoplay muted loop>
+                 <source src="./video/gd.mp4" type="video/mp4">
+               </video>
+	         </div>
+	         <div class="courseInfo">
+	            <h4>Graphic Design tutorials for all</h4>
+	            <p>Learn graphic design from professionals to enhance your skills. Become the best graphic designer here.</p>
+	            <a class="btn" href="course.html">Learn More</a>
+	         </div>
+	      </article>
+	      
+	      <article class="course">
+	         <div class="courseVid">
+	            <video width="320" height="240" autoplay muted loop >
+                 <source src="./video/gd1.mp4" type="video/mp4">
+               </video>
+	         </div>
+	         <div class="courseInfo">
+	            <h4>UI/UX Design tutorials for all</h4>
+	            <p>Learn graphic design from professionals to enhance your skills. Become the best graphic designer here.</p>
+	            <a class="btn" href="course.html">Learn More</a>
+	         </div>
+	      </article>
+	      
+	      <article class="course">
+	         <div class="courseVid">
+	            <video width="320" height="240" autoplay muted loop>
+                 <source src="./video/gd2.mp4" type="video/mp4">
+               </video>
+	         </div>
+	         <div class="courseInfo">
+	            <h4>Advertisement and NFTs tutorials for all</h4>
+	            <p>Learn graphic design from professionals to enhance your skills. Become the best graphic designer here.</p>
+	            <a class="btn" href="course.html">Learn More</a>
+	         </div>
+	      </article>
+	      <article class="course">
+	         <div class="courseVid">
+	            <video width="320" height="240" autoplay muted loop>
+                 <source src="./video/gd.mp4" type="video/mp4">
+               </video>
+	         </div>
+	         <div class="courseInfo">
+	            <h4>Graphic Design tutorials for all</h4>
+	            <p>Learn graphic design from professionals to enhance your skills. Become the best graphic designer here.</p>
+	            <a class="btn" href="course.html">Learn More</a>
+	         </div>
+	      </article>
+	      
+	      <article class="course">
+	         <div class="courseVid">
+	            <video width="320" height="240" autoplay muted loop >
+                 <source src="./video/gd1.mp4" type="video/mp4">
+               </video>
+	         </div>
+	         <div class="courseInfo">
+	            <h4>UI/UX Design tutorials for all</h4>
+	            <p>Learn graphic design from professionals to enhance your skills. Become the best graphic designer here.</p>
+	            <a class="btn" href="course.html">Learn More</a>
+	         </div>
+	      </article>
+	      
+	      <article class="course">
+	         <div class="courseVid">
+	            <video width="320" height="240" autoplay muted loop>
+                 <source src="./video/gd2.mp4" type="video/mp4">
+               </video>
+	         </div>
+	         <div class="courseInfo">
+	            <h4>Advertisement and NFTs tutorials for all</h4>
+	            <p>Learn graphic design from professionals to enhance your skills. Become the best graphic designer here.</p>
+	            <a class="btn" href="course.html">Learn More</a>
+	         </div>
+	      </article>
+	   </div>
+	   <div class="pagination container">
+   	   <div class="prev">
+   	      <a href="course1.html" class="btn">
+   	         <i class="uil uil-angle-left"></i>
+   	      <span>prev</span>
+   	      </a>
+   	   </div>
+   	   
+	      <a href="course.html" class="btn">1</a>
+   	   <a href="course1.html" class="btn">2</a>
+   	   <a href="#" class="btn">3</a>
+   	   <a href="course3" class="btn">4</a>
+   	   
+   	   <div class="next">
+   	   <a href="course3.html" class="btn">
+   	      <span>next</span>
+   	      <i class="uil uil-angle-right"></i>
+   	   </a>
+   	   </div>
+	   </div>
+	   
+	</section>
+	<! -------- end of courses -------- >
+	
+	
+   <footer>
+	   <div class="container containerFoot">
+	      <div class="footer1">
+	        <a href="index.html "><h4>edu<span>8r</span></h4></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at ultricies lorem.</p>
+	      </div>
+	      <div class="footer2">
+	         <h4>Permalink</h4>
+	         <ul class="permalinks">
+	            <li><a href="index.html">home</a></li>
+	            <li><a href="about.html">about</a></li>
+	            <li><a href="courses.html">courses</a></li>
+	            <li><a href="contact.html">contact</a></li>
+	         </ul>
+	      </div>
+	      <div class="footer3">
+	         <h4>Privacy</h4>
+	         <ul class="privacy">
+	            <li><a href="#">privacy policy</a></li>
+	            <li><a href="#">terms and conditions</a></li>
+	            <li><a href="#">refund policy</a></li>
+	         </ul>
+	      </div>
+	      <div class="footer4">
+	         <h4>Contact Us</h4>
+	            <div>
+	               <p>+233 59 960 6227</p>
+	               <p>harunaamadu@gmail.com</p>
+	            </div>
+	            <ul class="footerSocial">
+	               <li>
+	                  <a href="facebook.com/pixmax"><i class="uil uil-facebook-f"></i></a>
+	               </li>
+	               <li>
+	                  <a href="instagram.com/pixmax"><i class="uil uil-instagram-alt"></i></a>
+	               </li>
+	               <li>
+	                  <a href="twitter.com/pixmax"><i class="uil uil-twitter"></i></a>
+	               </li>
+	               <li>
+	                  <a href="linkin.com/pixmax"><i class="uil uil-linkin-alt"></i></a>
+	               </li>
+	            </ul>
+	      </div>
+	   </div>
+	      <div class="copyright">
+	         <small>Copyright &copy; Educ8r 2022</small>
+	      </div>
+	</footer>
+		
+		
+			
+			
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>	
+	<script src="./main.js" type="text/javascript" charset="utf-8"></script>		
+			
+   <script type="text/javascript" charset="utf-8">
+      var swiper = new Swiper(".mySwiper", {
+         slidesPerView: 1,
+         spaceBetween:30,
+         pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+         },
+         //when window with is >= 600
+         breakpoints: {
+            600: {
+            slidesPerView: 2,
+            }
+         }
+      });
+   </script>
+			
+</body>
+</html>
